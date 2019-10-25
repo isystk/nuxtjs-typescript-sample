@@ -12,7 +12,9 @@ export default {
     ]
   },
   loading: { color: "#3B8070" },
-  css: ["~/assets/css/main.css"],
+  css: [
+    { src: '~/assets/sass/app.scss', lang: 'scss' },
+  ],
   build: {},
   buildModules: ["@nuxt/typescript-build"],
   modules: [

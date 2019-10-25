@@ -90,22 +90,3 @@ export default class extends Vue {
   }
 }
 </script>
-
-<style scoped>
-.title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-
-.percentage {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  text-align: center;
-}
-
-.bar-container {
-  margin: 40px;
-}
-
-</style>
