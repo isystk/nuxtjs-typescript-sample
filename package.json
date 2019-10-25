@@ -15,13 +15,13 @@
     "sass-loader": "^8.0.0",
     "vuex-class": "0.3.2"
   },
+  "devDependencies": {
+    "@nuxt/typescript-build": "0.3.2"
+  },
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate"
-  },
-  "devDependencies": {
-    "@nuxt/typescript-build": "0.3.2"
   }
 }

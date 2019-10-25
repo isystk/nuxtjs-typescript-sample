@@ -1,0 +1,56 @@
+<template>
+  <v-layout row class="mb-5">
+    <v-flex xs12>
+      <h3 id="contact" class="headline">コンタクト</h3>
+      <v-divider />
+
+
+      <div class="vertical-center subheading mt-3">
+        <v-icon class="mr-2">mail</v-icon>
+
+        <a :href="`mailto:${email}`">
+          <span>メール(ise0615@gmail.com)</span>
+        </a>
+      </div>
+
+      <div class="vertical-center subheading mt-1">
+        <v-icon class="mr-2">mdi-github-circle</v-icon>
+
+        <a href="https://github.com/isystk">
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div class="vertical-center subheading mt-1">
+        <v-icon class="mr-2">search</v-icon>
+
+        <a href="https://qiita.com/isystk@github">
+          <span>Qiita</span>
+        </a>
+      </div>
+
+      <div class="vertical-center subheading mt-1">
+        <v-icon class="mr-2">mdi-pencil-circle-outline</v-icon>
+
+        <a href="https://twitter.com/ise0615">
+          <span>Twitter</span>
+        </a>
+      </div>
+    </v-flex>
+  </v-layout>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      email: ''
+    }
+  },
+  mounted() {
+    // 迷惑メール防止
+    setTimeout(() => { this.email = 'ise0615@gmail.com' }, 100)
+  }
+}
+</script>
+

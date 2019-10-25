@@ -1,18 +1,34 @@
 
+.v-rating {
+  min-width: 76px;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
 
+.jumbotron-title {
+  font-family: $font-family;
+  border-bottom: solid 1px white;
+}
+
+body {
+  background-color: blueviolet;
+}
 
 .title {
-  font-family: $font-family;
-  font-size: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
-.percentage {
-  font-family: $font-family;
-  font-size: 18px;
-  text-align: center;
+.rating-standard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.bar-container {
-  margin: 40px;
+.subheading {
+  padding: 0 4px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 4px;
 }
