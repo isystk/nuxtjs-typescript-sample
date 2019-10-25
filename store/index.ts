@@ -17,7 +17,7 @@ interface Actions<S, R> extends ActionTree<S, R> {
   nuxtServerInit (actionContext: ActionContext<S, R>, appContext: AppContext): void
 }
 
-export const actions: Actions<RootState, RootState> = {
+// export const actions: Actions<RootState, RootState> = {
   // async nuxtServerInit({ commit }, context) {
   //   let people: Person[] = []
 
@@ -28,4 +28,4 @@ export const actions: Actions<RootState, RootState> = {
 
   //   commit("setPeople", people.slice(0, 10))
   // }
-}
+// }
