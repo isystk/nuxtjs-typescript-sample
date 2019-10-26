@@ -23,21 +23,20 @@
   </v-flex>
 </template>
 
-<script>
-export default {
-  props: {
-    href: {
-      type: String,
-      required: true
-    },
-    src: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
-      default: ''
-    }
-  }
+<script lang="ts">
+import { Prop, Component, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Work extends Vue {
+  
+  @Prop() 
+  public href?: string;
+
+  @Prop() 
+  public src?: string;
+
+  @Prop() 
+  public title?: string;
+
 }
 </script>

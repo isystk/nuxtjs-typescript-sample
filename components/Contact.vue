@@ -40,14 +40,15 @@
   </v-layout>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      email: ''
-    }
-  },
-  mounted() {
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Contact extends Vue {
+  
+  email: string = '';
+
+  mounted(): void {
     // 迷惑メール防止
     setTimeout(() => { this.email = 'ise0615@gmail.com' }, 100)
   }
