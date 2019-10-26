@@ -27,7 +27,6 @@
       <v-layout
         align-center
         justify-center
-        row
         wrap>
 
         <v-flex sm12 md10 lg8 xl6>
@@ -58,6 +57,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { State } from "vuex-class"
+import { Person } from "~/types";
 import Profile from '~/components/Profile.vue';
 import Skills from '~/components/Skills.vue';
 import Works from '~/components/Works.vue';
@@ -68,7 +69,7 @@ import Contact from '~/components/Contact.vue';
     Profile, Skills, Works, Contact
   }
 })
-export default class Index extends Vue {
+export default class extends Vue {
   offsetTop: number = 0;
   options = {
     duration: 700,

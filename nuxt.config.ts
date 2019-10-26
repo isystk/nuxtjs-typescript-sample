@@ -19,14 +19,13 @@ export default {
   css: [
     { src: '~/assets/sass/app.scss', lang: 'scss' },
   ],
-  plugins: [
-    '@/plugins/vuetify'
-  ],
   build: {},
   buildModules: ["@nuxt/typescript-build"],
   modules: [
     "@nuxtjs/axios",
-    "@nuxtjs/vuetify",
+  ],
+  plugins: [
+    '@plugins/vuetify'
   ],
   manifest: {
     name: "Isystk's Portfolio",
