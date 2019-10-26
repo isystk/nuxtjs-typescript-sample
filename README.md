@@ -1,8 +1,13 @@
 ### Nuxt.js TypeScript Vuetify サンプル
 
-> Nuxt.js TypeScript Vuetify 
+Nuxt.js@2.10.2
+Vue.js@2.6.10 
+Vuetify@2.1.6 
 
 ## ドキュメント
+Vue.js
+https://v1-jp.vuejs.org/guide/
+
 Vuetify
 https://vuetifyjs.com/ja/getting-started/quick-start
 https://codepen.io/mzoks/pen/JpqwVO

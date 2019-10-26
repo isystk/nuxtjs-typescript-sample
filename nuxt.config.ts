@@ -3,7 +3,7 @@ const pkg = require('./package')
 export default {
   env: {},
   head: {
-    title: "Isystk's Portfolio",
+    title: pkg.name,
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },

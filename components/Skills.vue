@@ -44,18 +44,18 @@
 
       <h3 class="title my-3">プログラミング言語</h3>
 
-      <template v-for="e in skills" >
+      <template v-for="(e, index) in skills" >
         <skill 
           :title="e.title" 
           :color="e.color"
-          :rating="e.rating" :key="e">
+          :rating="e.rating" :key="index">
           
           <template slot="text">
             {{e.text}}<br>
           </template>
 
-          <template slot="list" v-for="e2 in e.items" >
-            <skill-list-item :name="e2.name" :rating="e2.rating" :key="e2">
+          <template slot="list" v-for="(e2, index2) in e.items" >
+            <skill-list-item :name="e2.name" :rating="e2.rating" :key="index2">
             {{e2.text}}<br>
             </skill-list-item>
           </template>
@@ -75,49 +75,7 @@ import SkillListItem from './SkillListItem.vue';
   }
 })
 export default class Skills extends Vue {
-  skills = [
-  {
-    "title": "JavaScript",
-    "color": "yellow",
-    "rating": 3,
-    "text": "xxxxx",
-    "items" : [
-      {
-        "name": "Node.js",
-        "rating": 2, 
-        "noDivider": false,
-        "text": "hogehoge"
-      },
-      {
-        "name": "Vue.js",
-        "rating": 3, 
-        "noDivider": false,
-        "text": "hogehoge"
-      }
-    ]
-  },
-
-  {
-    "title": "Java",
-    "color": "red",
-    "rating": 3,
-    "text": "xxxxx",
-    "items" : [
-      {
-        "name": "Node.js",
-        "rating": 2, 
-        "noDivider": false,
-        "text": "hogehoge"
-      },
-      {
-        "name": "Vue.js",
-        "rating": 3, 
-        "noDivider": false,
-        "text": "hogehoge"
-      }
-    ]
-  }
-]
+  skills = this.$store.state.skills;
 }
 </script>
 
