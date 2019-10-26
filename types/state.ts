@@ -1,5 +1,5 @@
-import { Person } from "~/types";
+import { Skill } from "~/types";
 
 export interface RootState {
-  people: Person[];
+  skill: Skill[];
 }
