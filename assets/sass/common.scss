@@ -1,7 +1,4 @@
 
-.v-rating {
-  min-width: 76px;
-}
 .vertical-center {
   display: flex;
   align-items: center;
@@ -10,11 +7,6 @@
 .jumbotron-title {
   font-family: $font-family;
   border-bottom: solid 1px white;
-}
-
-.title {
-  display: flex;
-  align-items: center;
 }
 
 .rating-standard {

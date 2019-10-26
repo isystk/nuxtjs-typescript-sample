@@ -1,5 +1,5 @@
 <template>
-  <v-layout row class="mb-5">
+  <v-layout class="mb-5">
     <v-flex xs12>
       <h3 id="profile" class="headline">自己紹介</h3>
       <v-divider />

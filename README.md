@@ -5,6 +5,7 @@
 ## ドキュメント
 Vuetify
 https://vuetifyjs.com/ja/getting-started/quick-start
+https://codepen.io/mzoks/pen/JpqwVO
 
 SASS
 https://sass-lang.com/documentation

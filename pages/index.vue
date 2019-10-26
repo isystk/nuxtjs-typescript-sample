@@ -7,7 +7,7 @@
 
       <v-container fill-height>
         <v-layout align-center>
-          <v-flex text-xs-center>
+          <v-flex text-center>
             <h3 class="display-3 white--text">
               <span class="jumbotron-title">Isystk's Portfolio</span>
             </h3>

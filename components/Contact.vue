@@ -1,5 +1,5 @@
 <template>
-  <v-layout row class="mb-5">
+  <v-layout class="mb-5">
     <v-flex xs12>
       <h3 id="contact" class="headline">コンタクト</h3>
       <v-divider />
