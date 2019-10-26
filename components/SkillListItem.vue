@@ -23,21 +23,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    name: {
-      type: String,
-      required: true
-    },
-    rating: {
-      type: Number,
-      default: 0
-    },
-    noDivider: {
-      type: Boolean,
-      default: false
-    }
-  },
+<script lang="ts">
+import { Prop, Component, Vue } from 'vue-property-decorator';
+@Component
+export default class SkillListItem extends Vue {
+  
+  @Prop()
+  public name?: string;
+
+  @Prop()
+  public rating?: number;
+
+  @Prop()
+  public noDivider?: boolean;
+
 }
 </script>

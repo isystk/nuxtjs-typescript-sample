@@ -109,12 +109,16 @@
   </v-layout>
 </template>
 
-<script>
-import Skill from './Skill.vue'
-import SkillListItem from './SkillListItem.vue'
-
-export default {
-  components: { Skill, SkillListItem }
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import Skill from './Skill.vue';
+import SkillListItem from './SkillListItem.vue';
+@Component({
+  components: {
+    Skill, SkillListItem
+  }
+})
+export default class Skills extends Vue {
 }
 </script>
 

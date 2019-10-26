@@ -27,22 +27,21 @@
   </v-card>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    color: {
-      type: String,
-      default: 'transparent'
-    },
-    rating: {
-      type: Number,
-      default: 0
-    },
-  },
+<script lang="ts">
+import { Prop, Component, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Skill extends Vue {
+  
+  @Prop() 
+  public title?: string;
+
+  @Prop()
+  public color?: string;
+
+  @Prop()
+  public rating?: number;
+
 }
 </script>
 

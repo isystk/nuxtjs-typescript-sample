@@ -21,10 +21,14 @@
   </v-layout>
 </template>
 
-<script>
-import Work from './Work.vue'
-
-export default {
-  components: { Work }
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import Work from './Work.vue';
+@Component({
+  components: {
+    Work
+  }
+})
+export default class Works extends Vue {
 }
 </script>
