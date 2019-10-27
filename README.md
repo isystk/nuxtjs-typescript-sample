@@ -46,22 +46,21 @@ $ yarn install
 
 ## Contribution
 
-* Vue.js
+Vue.js  
+[https://v1-jp.vuejs.org/guide/](https://v1-jp.vuejs.org/guide/)  
+  
+Vuetify  
+[https://vuetifyjs.com/ja/getting-started/quick-start](https://vuetifyjs.com/ja/getting-started/quick-start)  
+[https://codepen.io/mzoks/pen/JpqwVO](https://codepen.io/mzoks/pen/JpqwVO)  
+  
+DMI  
+[https://cdn.materialdesignicons.com/4.5.95/](https://cdn.materialdesignicons.com/4.5.95/)  
+  
+SASS  
+[https://sass-lang.com/documentation](https://sass-lang.com/documentation)  
 
-[https://v1-jp.vuejs.org/guide/](https://v1-jp.vuejs.org/guide/)
-
-* Vuetify
-
-[https://vuetifyjs.com/ja/getting-started/quick-start](https://vuetifyjs.com/ja/getting-started/quick-start)
-[https://codepen.io/mzoks/pen/JpqwVO](https://codepen.io/mzoks/pen/JpqwVO)
-
-* DMI
-
-[https://cdn.materialdesignicons.com/4.5.95/](https://cdn.materialdesignicons.com/4.5.95/)
-
-* SASS
-
-[https://sass-lang.com/documentation](https://sass-lang.com/documentation)
+TypeScript  
+[仕事で使えるTypeScript](https://future-architect.github.io/typescript-guide/index.html)　 
 
 ## Licence
 

@@ -55,7 +55,7 @@
           </template>
 
           <template slot="list" v-for="(e2, index2) in e.items" >
-            <skill-list-item :name="e2.name" :rating="e2.rating" :key="index2">
+            <skill-list-item :name="e2.name" :rating="e2.rating" :noDivider="e2.noDivider" :key="index2">
             {{e2.text}}<br>
             </skill-list-item>
           </template>

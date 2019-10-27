@@ -1,5 +1,43 @@
 [
   {
+    "title": "Java",
+    "color": "red",
+    "rating": 3,
+    "text": "Javaを利用した開発だけでなくフレームワークの選定から基盤構築までアーキテクチャ全体を対応する事が可能です。",
+    "items" : [
+      {
+        "name": "Spring Framework",
+        "rating": 3, 
+        "noDivider": true,
+        "text": "DI機能が流行りだした2006年頃から利用していました。当時はXMLの記述に苦労しましたが、今では使いやすいフレームワークに進化して最も利用する機会が多くなっています。"
+      },
+      {
+        "name": "Apache Struts",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "2010年頃までもっとも利用していました。Struts2も利用していましたが脆弱性の問題が発生した2017年以降はあまり利用しなくなりました。"
+      },
+      {
+        "name": "Apache Wicket",
+        "rating": 2, 
+        "noDivider": false,
+        "text": "SNSの開発で利用していました。軽量でUIに特化したフレームワークで利用しやすい印象でした。"
+      },
+      {
+        "name": "Play Framework",
+        "rating": 2, 
+        "noDivider": false,
+        "text": "2012年頃から1年ほどAndroid向けのAPI開発で利用していました。"
+      },
+      {
+        "name": "SAStruts",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "2010年頃から複数の開発案件で5年ほど利用していました。サポート終了以降はあまり利用しなくなりあmした。"
+      }
+    ]
+  },
+  {
     "title": "JavaScript",
     "color": "yellow",
     "rating": 3,
