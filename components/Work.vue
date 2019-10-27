@@ -8,8 +8,6 @@
             fill-height
             pa-3
             white--text>
-
-            <div class="subheading">{{ title }}</div>
           </v-layout>
         </v-img>
       </a>
@@ -34,9 +32,6 @@ export default class Work extends Vue {
 
   @Prop() 
   public src?: string;
-
-  @Prop() 
-  public title?: string;
 
 }
 </script>

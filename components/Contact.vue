@@ -9,7 +9,7 @@
         <v-icon class="mr-2">mail</v-icon>
 
         <a :href="`mailto:${email}`">
-          <span>メール(ise0615@gmail.com)</span>
+          <span>メール({{email}})</span>
         </a>
       </div>
 

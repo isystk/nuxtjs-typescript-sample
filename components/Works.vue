@@ -8,11 +8,18 @@
         <v-layout row wrap>
           <work 
             href="#" 
-            src="/img/work_portfolio.jpg"
-            title="ポートフォリオサイト">
+            src="/img/work_portfolio.jpg">
 
             このポートフォリオサイトです。<br>
-            Nuxt.js + Vuetifyで作られています。
+            Nuxt.js + TypeScript + Vuetifyで作られています。
+          </work>
+
+          <work 
+            href="#" 
+            src="/img/work_portfolio.jpg">
+
+            このポートフォリオサイトです。<br>
+            Nuxt.js + TypeScript + Vuetifyで作られています。
           </work>
 
         </v-layout>
