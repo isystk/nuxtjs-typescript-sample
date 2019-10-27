@@ -33,14 +33,14 @@ import { Prop, Component, Vue } from 'vue-property-decorator';
 @Component
 export default class Skill extends Vue {
   
-  @Prop() 
-  public title?: string;
+  @Prop({ default: '' }) 
+  public title!: string;
 
-  @Prop()
-  public color?: string;
+  @Prop({ default: '' })
+  public color!: string;
 
-  @Prop()
-  public rating?: number;
+  @Prop({ default: 0 })
+  public rating!: number;
 
 }
 </script>

@@ -8,13 +8,11 @@
         <v-card-title>
           <v-layout fill-height class="vertical-center">
             <v-avatar :size="128">
-              <img src="/icon.png" />
+              <img :src="profile.imageUrl" />
             </v-avatar>
 
             <v-flex xs12 ml-4>
-              <p class="mb-0">
-                いせと申します。<br>
-              </p>
+              <p class="mb-0" v-html="$options.filters.sanitize(profile.message)"></p>
             </v-flex>
           </v-layout>
         </v-card-title>
@@ -28,6 +26,7 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Profile extends Vue {
+  profile = this.$store.state.profile;
 }
 </script>
 

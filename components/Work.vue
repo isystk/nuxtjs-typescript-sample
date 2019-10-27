@@ -27,11 +27,11 @@ import { Prop, Component, Vue } from 'vue-property-decorator';
 @Component
 export default class Work extends Vue {
   
-  @Prop() 
-  public href?: string;
+  @Prop({ default: '' }) 
+  public href!: string;
 
-  @Prop() 
-  public src?: string;
+  @Prop({ default: '' }) 
+  public src!: string;
 
 }
 </script>

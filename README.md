@@ -12,6 +12,9 @@ Vuetify
 https://vuetifyjs.com/ja/getting-started/quick-start
 https://codepen.io/mzoks/pen/JpqwVO
 
+DMI
+https://cdn.materialdesignicons.com/4.5.95/
+
 SASS
 https://sass-lang.com/documentation
 
