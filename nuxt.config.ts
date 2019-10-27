@@ -25,7 +25,8 @@ export default {
     "@nuxtjs/axios",
   ],
   plugins: [
-    '@plugins/vuetify'
+    '@plugins/vuetify',
+    '~/plugins/filter.js'
   ],
   manifest: {
     name: "Isystk's Portfolio",

@@ -44,67 +44,23 @@
 
       <h3 class="title my-3">プログラミング言語</h3>
 
-      <skill 
-        title="JavaScript" 
-        color="yellow"
-        :rating="3">
-        
-        <template slot="text">
-           XXX<br>
-        </template>
+      <template v-for="(e, index) in skills" >
+        <skill 
+          :title="e.title" 
+          :color="e.color"
+          :rating="e.rating" :key="index">
+          
+          <template slot="text">
+            {{e.text}}<br>
+          </template>
 
-        <template slot="list">
-          <skill-list-item name="Node.js" :rating="2">
-           XXX<br>
-          </skill-list-item>
-
-          <skill-list-item name="Vue.js" :rating="3">
-           XXX<br>
-          </skill-list-item>
-
-          <skill-list-item name="jQuery" :rating="2">
-           XXX<br>
-          </skill-list-item>
-
-          <skill-list-item name="TypeScript" :rating="1">
-           XXX<br>
-          </skill-list-item>
-
-        </template>
-      </skill>
-
-      <skill
-        title="Java"
-        color="red accent-1"
-        :rating="3">
-
-        <template slot="text">
-          XXX<br>
-        </template>
-
-        <template slot="list">
-          <skill-list-item name="Spring Framework(Spring Boot)" :rating="3">
-            XXX<br>
-          </skill-list-item>
-
-        </template>
-      </skill>
-
-      <h3 class="title my-3">データベース</h3>
-
-      <v-card>
-        <skill-list-item name="MySQL" :rating="2" no-divider>
-          XXX<br>
-        </skill-list-item>
-
-        <skill-list-item name="Oracle Database 11g" :rating="1">
-          XXX<br>
-        </skill-list-item>
-
-        <skill-list-item name="MongoDB" :rating="1">
-          XXX<br>
-        </skill-list-item>
-      </v-card>
+          <template slot="list" v-for="(e2, index2) in e.items" >
+            <skill-list-item :name="e2.name" :rating="e2.rating" :key="index2">
+            {{e2.text}}<br>
+            </skill-list-item>
+          </template>
+        </skill>
+      </template>
     </v-flex>
   </v-layout>
 </template>
@@ -119,6 +75,7 @@ import SkillListItem from './SkillListItem.vue';
   }
 })
 export default class Skills extends Vue {
+  skills = this.$store.state.skills;
 }
 </script>
 

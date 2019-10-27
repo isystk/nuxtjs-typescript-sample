@@ -1,0 +1,22 @@
+[
+  {
+    "title": "JavaScript",
+    "color": "yellow",
+    "rating": 3,
+    "text": "xxxxx",
+    "items" : [
+      {
+        "name": "Node.js",
+        "rating": 2, 
+        "noDivider": false,
+        "text": "hogehoge"
+      },
+      {
+        "name": "Vue.js",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "hogehoge"
+      }
+    ]
+  }
+]

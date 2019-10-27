@@ -6,15 +6,15 @@
 
       <v-container grid-list-sm>
         <v-layout row wrap>
-          <work 
-            href="#" 
-            src="/img/work_portfolio.jpg"
-            title="ポートフォリオサイト">
+          <template v-for="(e, index) in works" >
+            <work 
+              :href="e.url" 
+              :src="e.imageUrl" :key="index">
 
-            このポートフォリオサイトです。<br>
-            Nuxt.js + Vuetifyで作られています。
-          </work>
-
+              {{e.title}}<br>
+              {{e.text}}
+            </work>
+          </template>
         </v-layout>
       </v-container>
     </v-flex>
@@ -30,5 +30,6 @@ import Work from './Work.vue';
   }
 })
 export default class Works extends Vue {
+  works = this.$store.state.works;
 }
 </script>

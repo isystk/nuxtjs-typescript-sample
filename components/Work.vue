@@ -8,8 +8,6 @@
             fill-height
             pa-3
             white--text>
-
-            <div class="subheading">{{ title }}</div>
           </v-layout>
         </v-img>
       </a>
@@ -29,14 +27,11 @@ import { Prop, Component, Vue } from 'vue-property-decorator';
 @Component
 export default class Work extends Vue {
   
-  @Prop() 
-  public href?: string;
+  @Prop({ default: '' }) 
+  public href!: string;
 
-  @Prop() 
-  public src?: string;
-
-  @Prop() 
-  public title?: string;
+  @Prop({ default: '' }) 
+  public src!: string;
 
 }
 </script>

@@ -1,6 +1,6 @@
 {
-  "name": "sample",
-  "description": "Nuxt.js TypeScript project",
+  "name": "IsystkPortfolio",
+  "description": "Isystk のポートフィリオです。",
   "version": "2.10.2",
   "private": true,
   "dependencies": {

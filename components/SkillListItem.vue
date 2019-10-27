@@ -28,13 +28,13 @@ import { Prop, Component, Vue } from 'vue-property-decorator';
 @Component
 export default class SkillListItem extends Vue {
   
-  @Prop()
-  public name?: string;
+  @Prop({ default: '' })
+  public name!: string;
 
-  @Prop()
-  public rating?: number;
+  @Prop({ default: 0 })
+  public rating!: number;
 
-  @Prop()
+  @Prop({ default: false })
   public noDivider?: boolean;
 
 }

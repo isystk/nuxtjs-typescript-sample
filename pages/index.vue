@@ -58,7 +58,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { State } from "vuex-class"
-import { Person } from "~/types";
+import { Skill } from "~/types";
 import Profile from '~/components/Profile.vue';
 import Skills from '~/components/Skills.vue';
 import Works from '~/components/Works.vue';
