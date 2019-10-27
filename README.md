@@ -1,34 +1,25 @@
-### Nuxt.js TypeScript Vuetify サンプル
+Nuxt.js TypeScript Vuetify サンプル
+====
 
-Nuxt.js@2.10.2
-Vue.js@2.6.10 
-Vuetify@2.1.6 
+Nuxt.js、TypeScript、Vuetify を利用したサンプルです。
 
-## ドキュメント
-Vue.js
-https://v1-jp.vuejs.org/guide/
+## Description
 
-Vuetify
-https://vuetifyjs.com/ja/getting-started/quick-start
-https://codepen.io/mzoks/pen/JpqwVO
+Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフィリオを作成してみました。
 
-DMI
-https://cdn.materialdesignicons.com/4.5.95/
+## Demo
 
-SASS
-https://sass-lang.com/documentation
+## VS. 
 
-## 操作コマンド
+## Requirement
+
+* Nuxt.js@2.10.2
+* Vue.js@2.6.10 
+* Vuetify@2.1.6 
+
+## Usage
 
 ``` bash
-# 環境構築
-$ nodebrew install v12.13.0
-$ nodebrew use v12.13.0
-
-$ npm install -g yarn
-
-$ yarn install
-
 # ビルド&起動
 $ yarn run dev
 http://localhost:3000/
@@ -41,4 +32,43 @@ $ yarn start
 $ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## Install
+
+``` bash
+# 環境構築
+$ nodebrew install v12.13.0
+$ nodebrew use v12.13.0
+
+$ npm install -g yarn
+
+$ yarn install
+```
+
+## Contribution
+
+* Vue.js
+
+[https://v1-jp.vuejs.org/guide/](https://v1-jp.vuejs.org/guide/)
+
+* Vuetify
+
+[https://vuetifyjs.com/ja/getting-started/quick-start](https://vuetifyjs.com/ja/getting-started/quick-start)
+[https://codepen.io/mzoks/pen/JpqwVO](https://codepen.io/mzoks/pen/JpqwVO)
+
+* DMI
+
+[https://cdn.materialdesignicons.com/4.5.95/](https://cdn.materialdesignicons.com/4.5.95/)
+
+* SASS
+
+[https://sass-lang.com/documentation](https://sass-lang.com/documentation)
+
+## Licence
+
+[MIT](https://github.com/isystk/nuxtjs_typescript_vuetify/LICENCE)
+
+## Author
+
+[isystk](https://github.com/isystk)
+
+
