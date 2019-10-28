@@ -33,24 +33,140 @@
         "name": "SAStruts",
         "rating": 3, 
         "noDivider": false,
-        "text": "2010年頃から複数の開発案件で5年ほど利用していました。サポート終了以降はあまり利用しなくなりあmした。"
+        "text": "2010年頃から複数の開発案件で5年ほど利用していました。サポート終了以降はあまり利用しなくなりました。"
       }
     ]
   },
   {
-    "title": "JavaScript",
+    "title": "フロントエンド",
     "color": "yellow",
     "rating": 3,
-    "text": "xxxxx",
+    "text": "直近ではNuxt.jsを使用して開発していました。",
     "items" : [
       {
+        "name": "JQuery",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "DOM操作はもちろんおしゃれなUIを実現するためのプラグイン作成まで対応可能です。クライアントの複雑な要望にもこだわりをもって作成しています。"
+      },
+      {
         "name": "Node.js",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "最近は主にCLIとして利用しています。Expressを利用したWebアプリケーションを作成することもあります。"
+      },
+      {
+        "name": "Vue.js",
+        "rating": 2, 
+        "noDivider": false,
+        "text": ""
+      },
+      {
+        "name": "Nuxt.js",
         "rating": 2, 
         "noDivider": false,
         "text": "hogehoge"
       },
       {
-        "name": "Vue.js",
+        "name": "AMP・PWA",
+        "rating": 2, 
+        "noDivider": false,
+        "text": "hogehoge"
+      }
+    ]
+  },
+  {
+    "title": "DB",
+    "color": "yellow",
+    "rating": 3,
+    "text": "直近ではNuxt.jsを使用して開発していました。",
+    "items" : [
+      {
+        "name": "Oracle",
+        "rating": 3, 
+        "noDivider": true,
+        "text": "hogehoge"
+      },
+      {
+        "name": "MySQL",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "hogehoge"
+      },
+      {
+        "name": "MongoDB",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "hogehoge"
+      }
+    ]
+  },
+  {
+    "title": "インフラ",
+    "color": "yellow",
+    "rating": 3,
+    "text": "直近ではNuxt.jsを使用して開発していました。",
+    "items" : [
+      {
+        "name": "AWS(EC2、RDS等)",
+        "rating": 2, 
+        "noDivider": true,
+        "text": "hogehoge"
+      },
+      {
+        "name": "Zabbix",
+        "rating": 2, 
+        "noDivider": false,
+        "text": "hogehoge"
+      },
+      {
+        "name": "New Relic",
+        "rating": 1, 
+        "noDivider": false,
+        "text": "hogehoge"
+      }
+    ]
+  },
+  {
+    "title": "検索エンジン",
+    "color": "yellow",
+    "rating": 3,
+    "text": "直近ではNuxt.jsを使用して開発していました。",
+    "items" : [
+      {
+        "name": "Solr",
+        "rating": 3, 
+        "noDivider": true,
+        "text": "hogehoge"
+      },
+      {
+        "name": "Elasticsearch",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "hogehoge"
+      }
+    ]
+  },
+  {
+    "title": "保有資格",
+    "color": "yellow",
+    "rating": 3,
+    "text": "直近ではNuxt.jsを使用して開発していました。",
+    "items" : [
+      {
+        "name": "Oracle Silver",
+        "rating": 3, 
+        "noDivider": true,
+        "text": ""
+      },
+      {
+        "name": "JavaSE silver",
+        "rating": 3, 
+        "noDivider": false,
+        "text": "hogehoge"
+      },
+      {
+        "name": "LPIC Level1",
         "rating": 3, 
         "noDivider": false,
         "text": "hogehoge"
