@@ -30,6 +30,12 @@ $ yarn start
 
 # 成果物の生成
 $ yarn run generate
+
+# ESR に保存するためのDockerImageの作成
+$ docker build -t portfolio .
+# 作成したDockerImageを実行してみて動作確認
+$ docker run -it -p 3000:3000 portfolio
+
 ```
 
 ## Install
