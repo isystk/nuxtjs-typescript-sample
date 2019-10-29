@@ -16,7 +16,7 @@
     </v-card-title>
 
     <v-card-text class="white">
-      <p class="mb-0">
+      <p class="body-2 mb-0 pt-2 discription">
         <slot name="text"></slot>
       </p>
     </v-card-text>

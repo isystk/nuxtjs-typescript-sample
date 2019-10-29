@@ -5,7 +5,7 @@ Nuxt.js、TypeScript、Vuetify を利用したサンプルです。
 
 ## Description
 
-Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフィリオを作成してみました。
+Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフォリオを作成してみました。
 
 ## Demo
 

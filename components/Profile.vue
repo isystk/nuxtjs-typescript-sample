@@ -12,7 +12,7 @@
             </v-avatar>
 
             <v-flex xs12 ml-4>
-              <p class="mb-0" v-html="$options.filters.sanitize(profile.message)"></p>
+              <p class="mb-0 profile-text" v-html="$options.filters.sanitize(profile.message)"></p>
             </v-flex>
           </v-layout>
         </v-card-title>
