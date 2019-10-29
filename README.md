@@ -20,10 +20,6 @@ Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフ�
 ## Usage
 
 ``` bash
-# ビルド&起動（開発時）
-$ yarn run dev
-http://localhost:3000/
-
 # ビルドしてから起動（公開時）
 $ yarn run build
 $ yarn start
@@ -31,8 +27,8 @@ $ yarn start
 # 静的ページを生成する場合
 $ yarn run generate
 
-# ESR に保存するためのDockerImageの作成
-$ docker build -t portfolio .
+# DockerImageの作成
+$ docker-compose build
 # 作成したDockerImageを実行してみて動作確認
 $ docker run -it -p 3000:3000 portfolio
 
@@ -45,9 +41,15 @@ $ docker run -it -p 3000:3000 portfolio
 $ nodebrew install v12.13.0
 $ nodebrew use v12.13.0
 
+# yarn(パッケージマネージャ)のインストール
 $ npm install -g yarn
 
+# 依存モジュールのインストール
 $ yarn install
+
+# ビルド&起動
+$ yarn run dev
+$ curl http://localhost:3000/
 ```
 
 ## Contribution
@@ -67,6 +69,9 @@ SASS
 
 TypeScript  
 [仕事で使えるTypeScript](https://future-architect.github.io/typescript-guide/index.html)　 
+
+Nuxt.js
+[typescript-nuxtjs-boilerplate-docs](https://typescript-nuxtjs-boilerplate-docs.netlify.com/#/nuxt/examples)
 
 ## Licence
 
