@@ -1,12 +1,11 @@
 # Nodeイメージの取得
 FROM node:12.13.0
 
-ENV HOST 0.0.0.0
+MAINTAINER isystk
 
 # ワーキングディレクトリの作成
 RUN mkdir -p /app
 COPY . /app
-# ワーキングディレクトリの指定
 WORKDIR /app
 
 # アプリのインストール
@@ -17,4 +16,4 @@ RUN yarn install
 RUN yarn run build
 
 EXPOSE 3000
-CMD ["npm", "run", "start"]
+CMD ["yarn", "start"]
