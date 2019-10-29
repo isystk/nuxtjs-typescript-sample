@@ -1,4 +1,4 @@
-import { Profile, Skill, Work, Contact } from "~/types";
+import { Profile, Skill, Work, Contact } from "../types";
 
 export interface RootState {
   profile: Profile;
