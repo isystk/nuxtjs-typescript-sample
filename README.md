@@ -20,16 +20,22 @@ Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフ�
 ## Usage
 
 ``` bash
-# ビルド&起動
+# ビルド&起動（開発時）
 $ yarn run dev
 http://localhost:3000/
 
-# ビルドだけ、起動だけ
+# ビルドしてから起動（公開時）
 $ yarn run build
 $ yarn start
 
-# 成果物の生成
+# 静的ページを生成する場合
 $ yarn run generate
+
+# ESR に保存するためのDockerImageの作成
+$ docker build -t portfolio .
+# 作成したDockerImageを実行してみて動作確認
+$ docker run -it -p 3000:3000 portfolio
+
 ```
 
 ## Install
