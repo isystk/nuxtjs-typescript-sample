@@ -2,6 +2,7 @@ const pkg = require('./package')
 
 export default {
   env: {},
+  srcDir: 'src/',
   // https://ja.nuxtjs.org/faq/host-port/
   server: {
     port: 3000,
@@ -46,7 +47,7 @@ export default {
   ],
   plugins: [
     '@plugins/vuetify',
-    '@/plugins/filter.js'
+    '@plugins/filter.js'
   ],
   manifest: {
     name: "Isystk's Portfolio",

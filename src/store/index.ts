@@ -1,10 +1,10 @@
 import { MutationTree, ActionTree, ActionContext } from "vuex";
 import { Context as AppContext } from "@nuxt/types";
-import { RootState, Profile, Skill, Work, Contact } from "~/types";
-import profileData from "~/static/data/profile.json";
-import skillsData from "~/static/data/skills.json";
-import worksData from "~/static/data/works.json";
-import contactsData from "~/static/data/contacts.json";
+import { RootState, Profile, Skill, Work, Contact } from "../types";
+import profileData from "../static/data/profile.json";
+import skillsData from "../static/data/skills.json";
+import worksData from "../static/data/works.json";
+import contactsData from "../static/data/contacts.json";
 
 export const state = (): RootState => ({
   profile: {
