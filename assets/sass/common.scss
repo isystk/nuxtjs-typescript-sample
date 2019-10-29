@@ -1,4 +1,9 @@
 
+.profile-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .vertical-center {
   display: flex;
   align-items: center;
@@ -12,6 +17,10 @@
 .title {
   display: flex;
   align-items: center;
+}
+
+.discription {
+  color:#000;
 }
 
 .rating-standard {
