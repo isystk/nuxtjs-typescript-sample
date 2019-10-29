@@ -30,7 +30,7 @@ $ yarn run generate
 # DockerImageの作成
 $ docker-compose build
 # 作成したDockerImageを実行してみて動作確認
-$ docker run -it -p 3000:3000 portfolio
+$ docker-compose up
 
 ```
 
