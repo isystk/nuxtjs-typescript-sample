@@ -1,14 +1,21 @@
 [
   {
     "title": "このポートフォリオサイトです。",
-    "text": "Nuxt.js + TypeScript + Vuetifyで作られています。",
+    "text": "Nuxt.js + TypeScript + Vuetify で作られています。",
     "url": "#",
     "imageUrl": "/img/work_portfolio.jpg"
   },
   {
-    "title": "このポートフォリオサイトです。",
-    "text": "Nuxt.js + TypeScript + Vuetifyで作られています。",
-    "url": "#",
-    "imageUrl": "/img/work_portfolio.jpg"
+    "title": "Web Hack by カイジ",
+    "text": "XSS の脆弱性があると「ざわざわ」して最後に..",
+    "url": "http://isystk.github.io/kaiji/",
+    "imageUrl": "/img/work_kaiji.jpg"
+  },
+  {
+    "title": "jQueryプラグインサンプル集",
+    "text": "jQueryで作成したプラグインの一部です。",
+    "url": "http://isystk.github.io/jquery/",
+    "imageUrl": "/img/xxxx.jpg"
   }
 ]
+ 
