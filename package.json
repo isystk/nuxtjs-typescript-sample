@@ -1,6 +1,6 @@
 {
   "name": "IsystkPortfolio",
-  "description": "Isystk のポートフォリオです。",
+  "description": "isystk のポートフォリオです。このサイトは、Nuxt.js + TypeScript + Vuetify で作られています。",
   "version": "2.10.2",
   "private": true,
   "dependencies": {
