@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      ## awsにログインする
+      - $(aws ecr get-login --no-include-email --region ${AWS_DEFAULT_REGION})
+      ## コンテナイメージのECRリポジトリURIを生成する
+      - REPOSITORY_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_NAME}
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker-compose build
+      - docker tag ${IMAGE_NAME}:latest ${REPOSITORY_URI}:latest
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
+      - docker push ${REPOSITORY_URI}:latest
+      - echo Writing image definitions file...
+      ## コンテナ定義の更新するためのファイルを作成する
+      - IMAGE_DIFINITION="{\"name\":\"${IMAGE_NAME}-container\",\"imageUri\":\"${REPOSITORY_URI}:${IMAGE_TAG}\"}"
+      - echo "[${IMAGE_DIFINITION}]" > imagedefinitions.json
+artifacts:
+    files: imagedefinitions.json
