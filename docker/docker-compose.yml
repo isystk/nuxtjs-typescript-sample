@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.15.2
+    ports:
+      - "80:80"
+      - "443:443"
+    #volumes:
+    #  - ./nginx/logs/nginx/:/var/log/nginx/
+    #  - ./nginx/conf.d:/etc/nginx/conf.d
+    #  - ./nginx/htdocs:/usr/share/nginx/html
+    #  - /etc/letsencrypt/live/exapmle.com/cert.pem:/etc/nginx/cert.pem
+    #  - /etc/letsencrypt/live/exapmle.com/privkey.pem:/etc/nginx/private.pem
+
+  app:
+    image: portfolio
+    build:
+      context: ".."
+      dockerfile: "./docker/app/Dockerfile"
+    env_file:
+      - "docker-compose.env"
+    ports:
+     - 3000:3000

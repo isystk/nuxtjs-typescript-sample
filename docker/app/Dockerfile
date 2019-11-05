@@ -1,5 +1,5 @@
 # Nodeイメージの取得
-FROM node:12.13.0
+FROM node:12.13.0-alpine
 
 MAINTAINER isystk
 
