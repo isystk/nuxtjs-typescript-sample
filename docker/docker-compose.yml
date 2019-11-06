@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  
+  nginx:
+    build:
+      context: "./nginx"
+      dockerfile: "Dockerfile"
+    ports:
+     - "80:80"
+     - "443:443"
+    restart: always
+    volumes:
+     - ${DOCKER_ROOT}nginx/conf.d:/etc/nginx/conf.d
+     - ${DOCKER_ROOT}nginx/ssl:/etc/nginx/ssl
+     - ${DOCKER_ROOT}nginx/html:/usr/share/nginx/html
+     - ${DOCKER_ROOT}nginx/logs/nginx:/var/log/nginx
+    links:
+      - webapp
+
+  webapp:
+    image: portfolio
+    build:
+      context: ".."
+      dockerfile: "./docker/webapp/Dockerfile"
+    ports:
+     - "3000:3000"
+    restart: always
+
