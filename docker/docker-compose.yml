@@ -1,24 +1,32 @@
 version: '3'
 
 services:
+  
   nginx:
-    image: nginx:1.15.2
+    build:
+      context: "./nginx"
+      dockerfile: "Dockerfile"
     ports:
-      - "80:80"
-      - "443:443"
-    #volumes:
-    #  - ./nginx/logs/nginx/:/var/log/nginx/
-    #  - ./nginx/conf.d:/etc/nginx/conf.d
-    #  - ./nginx/htdocs:/usr/share/nginx/html
+     - "80:80"
+     - "443:443"
+    restart: always
+    volumes:
+     - /C/teamlab/projects/nuxtjs_typeScript_vuetify/docker/nginx/conf.d:/etc/nginx/conf.d
+     - /C/teamlab/projects/nuxtjs_typeScript_vuetify/docker/nginx/html:/usr/share/nginx/html
+     - /C/teamlab/projects/nuxtjs_typeScript_vuetify/docker/nginx/logs/nginx:/var/log/nginx
     #  - /etc/letsencrypt/live/exapmle.com/cert.pem:/etc/nginx/cert.pem
     #  - /etc/letsencrypt/live/exapmle.com/privkey.pem:/etc/nginx/private.pem
+    links:
+      - webapp
 
-  app:
+  webapp:
     image: portfolio
     build:
       context: ".."
-      dockerfile: "./docker/app/Dockerfile"
+      dockerfile: "./docker/webapp/Dockerfile"
     env_file:
-      - "docker-compose.env"
+     - "docker-compose.env"
     ports:
-     - 3000:3000
+     - "3000:3000"
+    restart: always
+

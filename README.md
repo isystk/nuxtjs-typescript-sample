@@ -28,7 +28,7 @@ $ yarn start
 $ yarn run generate
 
 # DockerImageの作成
-$ docker-compose -f ./docker/docker-compose.yml build
+$ docker-compose -f ./docker/docker-compose.yml build --no-cache
 # 作成したDockerImageを実行してみて動作確認
 $ docker-compose -f ./docker/docker-compose.yml up
 
