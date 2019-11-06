@@ -12,10 +12,9 @@ services:
     restart: always
     volumes:
      - ${DOCKER_ROOT}nginx/conf.d:/etc/nginx/conf.d
+     - ${DOCKER_ROOT}nginx/ssl:/etc/nginx/ssl
      - ${DOCKER_ROOT}nginx/html:/usr/share/nginx/html
      - ${DOCKER_ROOT}nginx/logs/nginx:/var/log/nginx
-    #  - /etc/letsencrypt/live/exapmle.com/cert.pem:/etc/nginx/cert.pem
-    #  - /etc/letsencrypt/live/exapmle.com/privkey.pem:/etc/nginx/private.pem
     links:
       - webapp
 
