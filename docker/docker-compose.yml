@@ -11,9 +11,9 @@ services:
      - "443:443"
     restart: always
     volumes:
-     - /C/teamlab/projects/nuxtjs_typeScript_vuetify/docker/nginx/conf.d:/etc/nginx/conf.d
-     - /C/teamlab/projects/nuxtjs_typeScript_vuetify/docker/nginx/html:/usr/share/nginx/html
-     - /C/teamlab/projects/nuxtjs_typeScript_vuetify/docker/nginx/logs/nginx:/var/log/nginx
+     - ${DOCKER_ROOT}nginx/conf.d:/etc/nginx/conf.d
+     - ${DOCKER_ROOT}nginx/html:/usr/share/nginx/html
+     - ${DOCKER_ROOT}nginx/logs/nginx:/var/log/nginx
     #  - /etc/letsencrypt/live/exapmle.com/cert.pem:/etc/nginx/cert.pem
     #  - /etc/letsencrypt/live/exapmle.com/privkey.pem:/etc/nginx/private.pem
     links:
@@ -24,8 +24,6 @@ services:
     build:
       context: ".."
       dockerfile: "./docker/webapp/Dockerfile"
-    env_file:
-     - "docker-compose.env"
     ports:
      - "3000:3000"
     restart: always
