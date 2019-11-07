@@ -26,7 +26,7 @@ $ docker-compose -f ./docker/docker-compose.yml up -d nginx
 # Nginxを停止する
 $ docker-compose -f ./docker/docker-compose.yml stop nginx
 
-# ECSにアップロードする為のDockerImageを作成する
+# デプロイ用のDockerImageを作成する
 $ docker-compose -f ./docker/docker-compose.yml build --no-cache webapp
 ```
 
