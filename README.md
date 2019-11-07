@@ -20,18 +20,14 @@ Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフ�
 ## Usage
 
 ``` bash
-# ビルドしてから起動（公開時）
-$ yarn run build
-$ yarn start
+# Nginxを起動する
+$ docker-compose -f ./docker/docker-compose.yml up -d nginx
 
-# 静的ページを生成する場合
-$ yarn run generate
+# Nginxを停止する
+$ docker-compose -f ./docker/docker-compose.yml stop nginx
 
-# DockerImageの作成
-$ docker-compose -f ./docker/docker-compose.yml build --no-cache
-# 作成したDockerImageを実行してみて動作確認
-$ docker-compose -f ./docker/docker-compose.yml up
-
+# ECSにアップロードする為のDockerImageを作成する
+$ docker-compose -f ./docker/docker-compose.yml build --no-cache webapp
 ```
 
 ## Install

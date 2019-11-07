@@ -16,8 +16,6 @@ services:
      - ${DOCKER_ROOT}nginx/ssl:/etc/nginx/ssl
      - ${DOCKER_ROOT}nginx/html:/usr/share/nginx/html
      - ${DOCKER_ROOT}nginx/logs/nginx:/var/log/nginx
-    links:
-      - webapp
 
   webapp:
     image: isystk/portfolio
