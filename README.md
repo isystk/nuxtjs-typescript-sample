@@ -19,7 +19,7 @@ Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフ�
 
 ## Usage
 
-# ※DockerWindows(WSL)を利用している場合は以下の設定を入れて下さい。
+### ※DockerWindows(WSL)を利用している場合は以下の設定が必要です。
 $ vi ~/.bashrc
 ``` 
 export DOCKER_HOST=tcp://localhost:2375
@@ -39,8 +39,11 @@ $ yarn run nginx:start
 # Nginxを停止する
 $ yarn run nginx:stop
 
-# デプロイ用のDockerImageを作成する
+# DockerImageを作成する
 $ yarn run docker:build
+
+# DockerImageを起動する
+$ yarn run docker:up
 ```
 
 ## Install
