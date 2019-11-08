@@ -1,8 +1,24 @@
 const pkg = require('./package')
 
-export default {
-  env: {},
+const config = {
+  mode: 'universal',
   srcDir: "src/",
+  
+  /**
+   * 環境変数
+   * ビルド時に渡される env の値は、ここに記載することで文字列に置換される
+   */
+  env: {
+
+  },
+
+  /**
+   * Build configuration
+   * webpack のビルドに関する設定はここに書く
+   */
+  build: {
+  },
+
   // https://ja.nuxtjs.org/faq/host-port/
   server: {
     port: 3000,
@@ -36,11 +52,6 @@ export default {
   css: [
     { src: "@/assets/sass/app.scss", lang: "scss" },
   ],
-  /**
-   * Build configuration
-   * webpack のビルドに関する設定はここに書く
-   */
-  build: {},
   buildModules: ["@nuxt/typescript-build"],
   modules: [
     "@nuxtjs/axios",
@@ -69,3 +80,5 @@ export default {
     // See https://github.com/nuxt-community/axios-module#options
   }
 }
+
+module.exports = config

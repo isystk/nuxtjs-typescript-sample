@@ -21,13 +21,13 @@ Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフ�
 
 ``` bash
 # Nginxを起動する
-$ docker-compose -f ./docker/docker-compose.yml up -d nginx
+$ yarn run nginx:start
 
 # Nginxを停止する
-$ docker-compose -f ./docker/docker-compose.yml stop nginx
+$ yarn run nginx:stop
 
 # デプロイ用のDockerImageを作成する
-$ docker-compose -f ./docker/docker-compose.yml build --no-cache webapp
+$ yarn run docker:build
 ```
 
 ## Install
@@ -44,7 +44,7 @@ $ npm install -g yarn
 $ yarn install
 
 # ビルド&起動
-$ yarn run dev
+$ yarn run local
 $ curl http://localhost:3000/
 ```
 

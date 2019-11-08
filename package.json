@@ -1,8 +1,23 @@
 {
-  "name": "IsystkPortfolio",
-  "description": "isystk のポートフォリオです。このサイトは、Nuxt.js + TypeScript + Vuetify で作られています。",
-  "version": "2.10.2",
+  "name": "isystk-portfolio",
+  "title": "isystk のポートフォリオ",
   "private": true,
+  "version": "0.0.1",
+  "description": "isystk のポートフォリオです。このサイトは、Nuxt.js + TypeScript + Vuetify で作られています。",
+  "scripts": {
+    "local": "npm run dev",
+    "dev": "cross-env NODE_ENV=development BUILD_ENV=local NODE_OPTIONS=\"--max-old-space-size=4096\" nuxt-ts",
+    "build": "nuxt-ts build --no-lock",
+    "build:static": "nuxt-ts build --spa --no-lock",
+    "build:dev": "cross-env NODE_ENV=production BUILD_ENV=local envName=local nuxt build --no-lock",
+    "build:product": "cross-env NODE_ENV=production nuxt build --no-lock",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "docker:stats": "docker container stats",
+    "docker:build": "docker-compose -f ./docker/docker-compose.yml build --no-cache webapp",
+    "nginx:start": "docker-compose -f ./docker/docker-compose.yml up -d nginx",
+    "nginx:stop": "docker-compose -f ./docker/docker-compose.yml stop nginx"
+  },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.2.2",
     "@nuxtjs/axios": "5.8.0",
@@ -18,12 +33,7 @@
   },
   "devDependencies": {
     "@mdi/font": "^4.5.95",
-    "@nuxt/typescript-build": "0.3.2"
-  },
-  "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "@nuxt/typescript-build": "0.3.2",
+    "cross-env": "^6.0.3"
   }
 }
