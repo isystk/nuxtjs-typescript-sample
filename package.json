@@ -6,17 +6,19 @@
   "description": "isystk のポートフォリオです。このサイトは、Nuxt.js + TypeScript + Vuetify で作られています。",
   "scripts": {
     "local": "npm run dev",
-    "dev": "cross-env NODE_ENV=development BUILD_ENV=local NODE_OPTIONS=\"--max-old-space-size=4096\" nuxt-ts",
+    "dev": "cross-env NODE_ENV=development NODE_OPTIONS=\"--max-old-space-size=4096\" nuxt-ts",
     "build": "nuxt-ts build --no-lock",
     "build:static": "nuxt-ts build --spa --no-lock",
-    "build:dev": "cross-env NODE_ENV=production BUILD_ENV=local envName=local nuxt build --no-lock",
-    "build:product": "cross-env NODE_ENV=production nuxt build --no-lock",
+    "build:dev": "cross-env NODE_ENV=development nuxt build --no-lock",
+    "build:production": "cross-env NODE_ENV=production nuxt build --no-lock",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "docker:stats": "docker container stats",
-    "docker:build": "docker-compose -f ./docker/docker-compose.yml build --no-cache webapp",
+    "docker:rmi": "docker-compose -f ./docker/docker-compose.yml down --rmi all --volumes",
+    "webapp:build": "docker-compose -f ./docker/docker-compose.yml build --no-cache webapp",
+    "webapp:up": "docker-compose -f ./docker/docker-compose.yml up webapp",
     "nginx:start": "docker-compose -f ./docker/docker-compose.yml up -d nginx",
-    "nginx:stop": "docker-compose -f ./docker/docker-compose.yml stop nginx"
+    "nginx:stop": "docker-compose -f ./docker/docker-compose.yml stop nginx && docker-compose -f ./docker/docker-compose.yml rm -f nginx"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.2.2",

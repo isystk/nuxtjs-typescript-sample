@@ -19,6 +19,19 @@ Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフ�
 
 ## Usage
 
+# ※DockerWindows(WSL)を利用している場合は以下の設定を入れて下さい。
+$ vi ~/.bashrc
+``` 
+export DOCKER_HOST=tcp://localhost:2375
+```
+
+$ sudo vi /etc/wsl.conf
+``` 
+[automount]
+root = /
+options = "metadata"
+```
+
 ``` bash
 # Nginxを起動する
 $ yarn run nginx:start

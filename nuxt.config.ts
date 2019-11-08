@@ -9,7 +9,12 @@ const config = {
    * ビルド時に渡される env の値は、ここに記載することで文字列に置換される
    */
   env: {
+    // Nuxt のビルドで必要な環境変数
+    NODE_ENV: process.env.NODE_ENV || '',
+    BUILD_ENV: process.env.BUILD_ENV || '',
 
+    // Docker から渡ってくる Nuxt アプリで使う環境変数
+    internalEndpointUrl: process.env.internalEndpointUrl || ''
   },
 
   /**
@@ -78,7 +83,14 @@ const config = {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-  }
+  },
+
+  /**
+   * nuxt サーバーを API サーバーとして使う場合のミドルウェアを定義する
+   */
+  serverMiddleware: [
+    { path: '/api/healthcheck', handler: '~/api/healthcheck.js' }
+  ]
 }
 
 module.exports = config
