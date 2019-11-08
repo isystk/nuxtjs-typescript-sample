@@ -40,10 +40,10 @@ $ yarn run nginx:start
 $ yarn run nginx:stop
 
 # DockerImageを作成する
-$ yarn run docker:build
+$ yarn run webapp:build
 
 # DockerImageを起動する
-$ yarn run docker:up
+$ yarn run webapp:up
 ```
 
 ## Install
