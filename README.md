@@ -20,15 +20,31 @@ http://isystk.github.io/profile/
 
 ## Usage
 
+### ※DockerWindows(WSL)を利用している場合は以下の設定が必要です。
+$ vi ~/.bashrc
+``` 
+export DOCKER_HOST=tcp://localhost:2375
+```
+
+$ sudo vi /etc/wsl.conf
+``` 
+[automount]
+root = /
+options = "metadata"
+```
+
 ``` bash
 # Nginxを起動する
-$ docker-compose -f ./docker/docker-compose.yml up -d nginx
+$ yarn run nginx:start
 
 # Nginxを停止する
-$ docker-compose -f ./docker/docker-compose.yml stop nginx
+$ yarn run nginx:stop
 
-# デプロイ用のDockerImageを作成する
-$ docker-compose -f ./docker/docker-compose.yml build --no-cache webapp
+# DockerImageを作成する
+$ yarn run webapp:build
+
+# DockerImageを起動する
+$ yarn run webapp:up
 ```
 
 ## Install
@@ -45,7 +61,7 @@ $ npm install -g yarn
 $ yarn install
 
 # ビルド&起動
-$ yarn run dev
+$ yarn run local
 $ curl http://localhost:3000/
 ```
 
