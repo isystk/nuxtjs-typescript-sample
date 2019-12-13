@@ -26,6 +26,6 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "cross-env GITHUB_PAGES=true nuxt-ts generate",
+    "generate": "cross-env GITHUB_PAGES=true nuxt-ts generate"
   }
 }
