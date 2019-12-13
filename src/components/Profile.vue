@@ -8,7 +8,7 @@
         <v-card-title>
           <v-layout fill-height class="vertical-center">
             <v-avatar :size="128">
-              <img :src="profile.imageUrl" />
+              <img :src="`${STATIC_PATH}${profile.imageUrl}`" />
             </v-avatar>
 
             <v-flex xs12 ml-4>
@@ -27,6 +27,7 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component
 export default class Profile extends Vue {
   profile = this.$store.state.profile;
+  STATIC_PATH = process.env.STATIC_PATH;
 }
 </script>
 

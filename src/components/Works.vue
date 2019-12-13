@@ -9,7 +9,7 @@
           <template v-for="(e, index) in works" >
             <work 
               :href="e.url" 
-              :src="e.imageUrl" :key="index">
+              :src="`${STATIC_PATH}${e.imageUrl}`" :key="index">
 
               {{e.title}}<br>
               {{e.text}}
@@ -31,5 +31,6 @@ import Work from './Work.vue';
 })
 export default class Works extends Vue {
   works = this.$store.state.works;
+  STATIC_PATH = process.env.STATIC_PATH;
 }
 </script>
