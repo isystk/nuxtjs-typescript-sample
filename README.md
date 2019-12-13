@@ -8,6 +8,7 @@ Nuxt.js、TypeScript、Vuetify を利用したサンプルです。
 Nuxt.js、TypeScript、Vuetify を学習する目的で、自分のポートフォリオを作成してみました。
 
 ## Demo
+http://isystk.github.io/profile/
 
 ## VS. 
 

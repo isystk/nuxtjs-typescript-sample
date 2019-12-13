@@ -1,4 +1,8 @@
 const pkg = require('./package')
+var webpack = require("webpack")
+
+// コンテキストパス
+const PRODUCTION_BASE_PATH = process.env.GITHUB_PAGES ? '/profile/' : '/'
 
 const config = {
   mode: 'universal',
@@ -9,12 +13,19 @@ const config = {
    * ビルド時に渡される env の値は、ここに記載することで文字列に置換される
    */
   env: {
+    // コンテキストパス
+    STATIC_PATH: PRODUCTION_BASE_PATH,
+
     // Nuxt のビルドで必要な環境変数
     NODE_ENV: process.env.NODE_ENV || '',
     BUILD_ENV: process.env.BUILD_ENV || '',
 
     // Docker から渡ってくる Nuxt アプリで使う環境変数
     internalEndpointUrl: process.env.internalEndpointUrl || ''
+  },
+
+  router: {
+    base: PRODUCTION_BASE_PATH
   },
 
   /**
@@ -75,8 +86,8 @@ const config = {
     theme_color: "#fff",
     background_color: "#fff",
     display: "standalone",
-    scope: "/",
-    start_url: "/"
+    scope: "/profile/",
+    start_url: "/profile/"
   },
   /**
    * Axios module configuration
