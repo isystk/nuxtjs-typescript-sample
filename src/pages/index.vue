@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  v-img(src='/img/jumbotron.jpg', max-height='320px', gradient='to top right, rgba(63,81,181, .4), rgba(25,32,72, .4)')
+  v-img(:src="jumbotronPath", max-height='320px', gradient='to top right, rgba(63,81,181, .4), rgba(25,32,72, .4)')
     v-container(fill-height='')
       v-layout(align-center='')
         v-flex(text-center='')
@@ -38,6 +38,7 @@ import Contact from '../components/Contact.vue';
   }
 })
 export default class extends Vue {
+  jumbotronPath = process.env.STATIC_PATH + 'img/jumbotron.jpg';
   offsetTop: number = 0;
   options = {
     duration: 700,
