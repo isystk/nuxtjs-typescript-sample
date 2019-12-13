@@ -4,35 +4,19 @@ var webpack = require("webpack")
 // コンテキストパス
 const PRODUCTION_BASE_PATH = process.env.GITHUB_PAGES ? '/profile/' : '/'
 
-const config = {
-  mode: 'universal',
+export default {
   srcDir: "src/",
-  
+
   /**
    * 環境変数
    * ビルド時に渡される env の値は、ここに記載することで文字列に置換される
    */
   env: {
-    // コンテキストパス
     STATIC_PATH: PRODUCTION_BASE_PATH,
-
-    // Nuxt のビルドで必要な環境変数
-    NODE_ENV: process.env.NODE_ENV || '',
-    BUILD_ENV: process.env.BUILD_ENV || '',
-
-    // Docker から渡ってくる Nuxt アプリで使う環境変数
-    internalEndpointUrl: process.env.internalEndpointUrl || ''
   },
-
+  
   router: {
     base: PRODUCTION_BASE_PATH
-  },
-
-  /**
-   * Build configuration
-   * webpack のビルドに関する設定はここに書く
-   */
-  build: {
   },
 
   // https://ja.nuxtjs.org/faq/host-port/
@@ -68,6 +52,11 @@ const config = {
   css: [
     { src: "@/assets/sass/app.scss", lang: "scss" },
   ],
+  /**
+   * Build configuration
+   * webpack のビルドに関する設定はここに書く
+   */
+  build: {},
   buildModules: ["@nuxt/typescript-build"],
   modules: [
     "@nuxtjs/axios",
@@ -94,14 +83,5 @@ const config = {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-  },
-
-  /**
-   * nuxt サーバーを API サーバーとして使う場合のミドルウェアを定義する
-   */
-  serverMiddleware: [
-    { path: '/api/healthcheck', handler: '~/api/healthcheck.js' }
-  ]
+  }
 }
-
-module.exports = config
