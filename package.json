@@ -1,6 +1,6 @@
 {
-  "name": "ecr-sample",
-  "description": "Githubにプッシュすると自動でDockerイメージを生成してECR(AWS)にDockerイメージをビルドするサンプルです。",
+  "name": "nuxtjs-sample",
+  "description": "Nuxt.js、TypeScript、Vuetify を利用したサンプルです。",
   "version": "2.10.2",
   "private": true,
   "dependencies": {

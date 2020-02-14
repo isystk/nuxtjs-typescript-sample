@@ -18,7 +18,7 @@ export default {
     host: "0.0.0.0" // デフォルト: localhost
   },
   head: {
-    title: "Isystk's Portfolio",
+    title: "nuxtjs-sample｜デモページ",
     meta: [
       { hid: "charset", charset: "utf-8" },
       { hid: "viewport", name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -32,7 +32,10 @@ export default {
       { rel: "icon", type: "image/vnd.microsoft.icon", href: "/favicon.ico" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Orbitron" }
-    ]
+    ],
+    bodyAttrs: {
+      class: 'column1'
+    }
   },
   // loading: { color: "#fff" },
   // ローディングを使わない場合はここを false

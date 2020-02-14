@@ -13,17 +13,6 @@ Nuxt.js、TypeScript、Vuetify を利用したサンプルです。
 
 ## Usage
 
-``` bash
-# Nginxを起動する
-$ docker-compose -f ./docker/docker-compose.yml up -d nginx
-
-# Nginxを停止する
-$ docker-compose -f ./docker/docker-compose.yml stop nginx
-
-# デプロイ用のDockerImageを作成する
-$ docker-compose -f ./docker/docker-compose.yml build --no-cache webapp
-```
-
 ## Install
 
 ``` bash
@@ -36,7 +25,7 @@ $ curl http://localhost:3000/
 
 ## Licence
 
-[MIT](https://github.com/isystk/ecr-sample/LICENCE)
+[MIT](https://github.com/isystk/nuxtjs-sample/LICENCE)
 
 ## Author
 
