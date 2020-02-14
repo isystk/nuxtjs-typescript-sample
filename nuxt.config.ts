@@ -1,25 +1,17 @@
 const pkg = require('./package')
-var webpack = require("webpack")
-
-// コンテキストパス
-const PRODUCTION_BASE_PATH = process.env.GITHUB_PAGES ? '/profile/' : '/'
 
 export default {
   srcDir: "src/",
-
   /**
    * 環境変数
    * ビルド時に渡される env の値は、ここに記載することで文字列に置換される
    */
   env: {
-    STATIC_PATH: PRODUCTION_BASE_PATH,
+      STATIC_PATH: '/'
   },
-  
   router: {
-    base: PRODUCTION_BASE_PATH
+    base: '/'
   },
-
-  // https://ja.nuxtjs.org/faq/host-port/
   server: {
     port: 3000,
     // 他のパソコンから IP でつながるように host を変更
@@ -59,25 +51,12 @@ export default {
   build: {},
   buildModules: ["@nuxt/typescript-build"],
   modules: [
-    "@nuxtjs/axios",
-    "@nuxtjs/pwa"
+    "@nuxtjs/axios"
   ],
   plugins: [
     "@plugins/vuetify",
     "@plugins/filter.js"
   ],
-  manifest: {
-    name: pkg.name,
-    title: "Isystk's Portfolio",
-    "og:title": "Isystk's Portfolio",
-    description: pkg.description,
-    lang: "ja",
-    theme_color: "#fff",
-    background_color: "#fff",
-    display: "standalone",
-    scope: "/profile/",
-    start_url: "/profile/"
-  },
   /**
    * Axios module configuration
    */

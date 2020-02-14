@@ -1,6 +1,6 @@
 {
-  "name": "IsystkPortfolio",
-  "description": "isystk のポートフォリオです。このサイトは、Nuxt.js + TypeScript + Vuetify で作られています。",
+  "name": "ecr-sample",
+  "description": "Githubにプッシュすると自動でDockerイメージを生成してECR(AWS)にDockerイメージをビルドするサンプルです。",
   "version": "2.10.2",
   "private": true,
   "dependencies": {
@@ -23,9 +23,7 @@
     "pug-plain-loader": "^1.0.0"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "cross-env GITHUB_PAGES=true nuxt-ts generate"
+    "generate": "nuxt-ts generate",
+    "dev": "nuxt-ts"
   }
 }
