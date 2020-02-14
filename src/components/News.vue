@@ -19,10 +19,18 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { Loading } from 'element-ui';
 
 @Component
 export default class News extends Vue {
   news = this.$store.state.news;
+
+  mounted () {
+    const PR = Loading.service({});
+    this.$nextTick(() => {
+      PR.prettyPrint();
+    })
+  }
 }
 </script>
 

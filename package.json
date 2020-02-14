@@ -7,6 +7,7 @@
     "@nuxt/typescript-runtime": "0.2.2",
     "@nuxtjs/axios": "5.8.0",
     "@nuxtjs/pwa": "^3.0.0-beta.19",
+    "element-ui": "^2.13.0",
     "install": "^0.13.0",
     "node-sass": "^4.13.0",
     "npm": "^6.12.0",
@@ -23,7 +24,7 @@
     "pug-plain-loader": "^1.0.0"
   },
   "scripts": {
-    "generate": "nuxt-ts generate",
+    "build": "nuxt-ts generate",
     "dev": "nuxt-ts"
   }
 }

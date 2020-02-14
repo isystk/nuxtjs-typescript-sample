@@ -28,10 +28,15 @@ export default {
       { hid: "index,follow", name: "robots", content: "index,follow" },
       { hid: "format-detection", name: "format-detection", content: "telephone=no"}
     ],
+    script: [
+      { src: './js/jquery-3.4.1.min.js' },
+      { src: './js/prettify.js' },
+      { src: './js/lang-css.js' },
+      { src: './js/kaiji.js' },
+      { src: './js/index.js' }
+    ],
     link: [
-      { rel: "icon", type: "image/vnd.microsoft.icon", href: "/favicon.ico" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Orbitron" }
+      { rel: "icon", type: "image/vnd.microsoft.icon", href: "/favicon.ico" }
     ],
     bodyAttrs: {
       class: 'column1'
@@ -57,8 +62,6 @@ export default {
     "@nuxtjs/axios"
   ],
   plugins: [
-    "@plugins/vuetify",
-    "@plugins/filter.js"
   ],
   /**
    * Axios module configuration
