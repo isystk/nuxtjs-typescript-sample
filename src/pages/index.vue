@@ -3,7 +3,7 @@
     <Header></Header>
     <div class="content">
       <main>
-        <Detail class="top" link="/post/1/"></Detail>
+        <DetailList class="top" detail-link="/post/1/"></DetailList>
       </main>
       <side-menu></side-menu>
     </div>
@@ -17,14 +17,14 @@ import { State } from "vuex-class"
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import SideMenu from '../components/SideMenu.vue';
-import Detail from '../components/Detail.vue';
+import DetailList from '../components/DetailList.vue';
 
 @Component({
   components: {
     Header,
     Footer,
     SideMenu,
-    Detail
+    DetailList
   }
 })
 export default class extends Vue {

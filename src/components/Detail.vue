@@ -1,7 +1,5 @@
 <template>
   <article class="detail" >
-    {{link}}
-    <a href="/post/1/">
     <div class="entry-header">
       <h1 class="entry-title">タイトルタイトルタイトルタイトルタイトル</h1>
     </div>
@@ -15,7 +13,6 @@
       <p>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
     </div>
     <div class="clearfix"></div>
-    </a>
   </article>
 </template>
 
@@ -24,7 +21,6 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
 export default class extends Vue {
-  props: ['link']
 }
 </script>
 
