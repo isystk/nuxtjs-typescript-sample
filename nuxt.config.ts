@@ -29,9 +29,7 @@ export default {
       { hid: "format-detection", name: "format-detection", content: "telephone=no"}
     ],
     script: [
-      { src: './js/jquery-3.4.1.min.js' },
-      { src: './js/prettify.js' },
-      { src: './js/lang-css.js' }
+      { src: '/js/jquery-3.4.1.min.js' }
     ],
     link: [
       { rel: "icon", type: "image/vnd.microsoft.icon", href: "/favicon.ico" }

@@ -4,9 +4,9 @@
       <h1 class="entry-title">{{post.title}}</h1>
     </div>
     <div class="entry-content" >
-      <template v-for="e in post.contents" >
-      <h2 :key="e.subTitle">{{e.subTitle}}</h2>
-      <p :key="e.subTitle" v-html="e.text"></p>
+      <template v-for="(e, index) in post.contents" >
+      <h2 :key="index">{{e.subTitle}}</h2>
+      <p :key="index" v-html="e.text"></p>
       </template>
     </div>
     <div class="clearfix"></div>
