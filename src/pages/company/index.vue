@@ -1,8 +1,8 @@
 <template>
-  <div class="wrap">
+  <main class="wrap">
     <Header></Header>
     <div class="content">
-      <div class="main">
+      <main>
         <article class="detail" >
           <div class="entry-header">
             <h1 class="entry-title">会社概要</h1>
@@ -13,7 +13,7 @@
           </div>
           <div class="clearfix"></div>
         </article>
-      </div>
+      </main>
       <side-menu></side-menu>
     </div>
     <Footer></Footer>
