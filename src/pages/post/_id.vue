@@ -3,7 +3,7 @@
     <Header></Header>
     <div class="content">
       <main>
-        <Detail class="top" link="/post/1/"></Detail>
+        <detail></detail>
       </main>
       <side-menu></side-menu>
     </div>
@@ -14,10 +14,10 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { State } from "vuex-class"
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
-import SideMenu from '../components/SideMenu.vue';
-import Detail from '../components/Detail.vue';
+import Header from '../../components/Header.vue';
+import Footer from '../../components/Footer.vue';
+import SideMenu from '../../components/SideMenu.vue';
+import Detail from '../../components/Detail.vue';
 
 @Component({
   components: {
@@ -28,6 +28,10 @@ import Detail from '../components/Detail.vue';
   }
 })
 export default class extends Vue {
+  validate ({ params }) {
+    // 数値でなければならない
+    return /^\d+$/.test(params.id)
+  }
 }
 
 </script>
