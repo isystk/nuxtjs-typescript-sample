@@ -3,7 +3,7 @@
     <Header></Header>
     <div class="content">
       <main>
-        <Detail></Detail>
+        <Detail :post-id="$route.params.id"></Detail>
       </main>
       <side-menu></side-menu>
     </div>
@@ -28,6 +28,7 @@ import Detail from '../../components/Detail.vue';
   }
 })
 export default class extends Vue {
+  
   validate ({ params } : any) {
     // 数値でなければならない
     return /^\d+$/.test(params.id)

@@ -1,7 +1,7 @@
 <template>
   <article class="detail" >
     <div class="entry-header">
-      <h1 class="entry-title">タイトルタイトルタイトルタイトルタイトル</h1>
+      <h1 class="entry-title">タイトルタイトルタイトルタイトルタイトル{{postId}}</h1>
     </div>
     <div class="entry-content" >
       <h2>サブタイトル</h2>
@@ -21,6 +21,11 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
 export default class extends Vue {
+  @Prop({ type: String, required: true })
+  postId?: number;
+
+  post = this.$store.dispatch('getDetailData', this.postId);
+
 }
 </script>
 

@@ -8,8 +8,11 @@ export const state = (): RootState => ({
 })
 
 export const mutations: MutationTree<RootState> = {
-  setBlog(state: RootState, blogs: Blog[]): void {
+  setBlogList(state: RootState, blogs: Blog[]): void {
     state.blogs = blogs
+  },
+  getBlogList(state: RootState): Blog[] {
+    return state.blogs;
   }
 }
 
@@ -18,11 +21,22 @@ interface Actions<S, R> extends ActionTree<S, R> {
 }
 
 export const actions: Actions<RootState, RootState> = {
+  // サーバー起動時にデータを取得する場合
   async nuxtServerInit({ commit }, context) {
     let blogs: Blog[];
     blogs = context.isStatic ?
       blogData :
       await context.app.$axios.$get("./data/blog.json");
-    commit("setBlog", blogs);
+    commit("setBlogList", blogs);
+  },
+  
+  async getDetailData({commit}, _id) {
+    console.log('hoge:' + _id);
+    // let blogs: Blog[];
+    // blogs = blogData;
+    // return _.pluck(blogs, function(data: Blog) {
+    //   return data.id = _id;
+    // });
   }
 }
+
