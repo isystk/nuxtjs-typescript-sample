@@ -5,15 +5,15 @@
     "category": "デザイン",
     "contents" : [
       {
-        "sub-title": "WordPressに最低限必要なパーツ",
+        "subTitle": "WordPressに最低限必要なパーツ",
         "text": "TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       },
       {
-        "sub-title": "作成したWordpress用のデザインHTML",
+        "subTitle": "作成したWordpress用のデザインHTML",
         "text": "TEXTTEXTTEXTTETTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       },
       {
-        "sub-title": "完成したデザインHTMLのソースコード",
+        "subTitle": "完成したデザインHTMLのソースコード",
         "text": "TEXTTEXTTEXTTETTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       }
     ]
@@ -24,15 +24,15 @@
     "category": "ポートフォリオ",
     "contents" : [
       {
-        "sub-title": "何故、ポートフォリオを作るのか？",
+        "subTitle": "何故、ポートフォリオを作るのか？",
         "text": "TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       },
       {
-        "sub-title": "完成したポートフォリオの紹介",
+        "subTitle": "完成したポートフォリオの紹介",
         "text": "TEXTTEXTTEXTTETTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       },
       {
-        "sub-title": "完成したソースコード",
+        "subTitle": "完成したソースコード",
         "text": "TEXTTEXTTEXTTETTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       }
     ]
@@ -43,15 +43,15 @@
     "category": "開発環境",
     "contents" : [
       {
-        "sub-title": "何故、Dockerを使うのか？",
+        "subTitle": "何故、Dockerを使うのか？",
         "text": "TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       },
       {
-        "sub-title": "WindowsでDockerを利用するための準備",
+        "subTitle": "WindowsでDockerを利用するための準備",
         "text": "TEXTTEXTTEXTTETTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       },
       {
-        "sub-title": "DockerでWordpressを動かしてみよう！",
+        "subTitle": "DockerでWordpressを動かしてみよう！",
         "text": "TEXTTEXTTEXTTETTEXTTEXTTEXTTEXTTEXTTEXT<br>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT"
       }
     ]

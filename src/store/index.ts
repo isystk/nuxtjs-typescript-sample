@@ -1,7 +1,6 @@
 import { MutationTree, ActionTree, ActionContext } from "vuex";
 import { Context as AppContext } from "@nuxt/types";
 import { RootState, Blog } from "../types";
-import blogData from "../static/data/blog.json";
 
 export const state = (): RootState => ({
   blogs: []
@@ -10,9 +9,12 @@ export const state = (): RootState => ({
 export const mutations: MutationTree<RootState> = {
   setBlogList(state: RootState, blogs: Blog[]): void {
     state.blogs = blogs
-  },
-  getBlogList(state: RootState): Blog[] {
-    return state.blogs;
+  }
+}
+
+export const getters = {
+  getBlogDetail: (state: RootState) => (id: number) => {
+    return state.blogs.find(blog => blog.id+'' === id+'');
   }
 }
 
@@ -24,19 +26,8 @@ export const actions: Actions<RootState, RootState> = {
   // サーバー起動時にデータを取得する場合
   async nuxtServerInit({ commit }, context) {
     let blogs: Blog[];
-    blogs = context.isStatic ?
-      blogData :
-      await context.app.$axios.$get("./data/blog.json");
+    blogs = await context.app.$axios.$get("./data/blog.json");
     commit("setBlogList", blogs);
-  },
-  
-  async getDetailData({commit}, _id) {
-    console.log('hoge:' + _id);
-    // let blogs: Blog[];
-    // blogs = blogData;
-    // return _.pluck(blogs, function(data: Blog) {
-    //   return data.id = _id;
-    // });
   }
 }
 

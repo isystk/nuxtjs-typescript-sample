@@ -1,12 +1,12 @@
 export * from './state';
 
 export interface BlogText {
-  "id": number;
+  "subTitle": string;
   "text": string;
-  "sub-title": string;
 }
 
 export interface Blog {
+  "id": number;
   "title": string;
   "category": string;
   "items": BlogText[];
