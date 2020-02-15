@@ -2,9 +2,7 @@
   <div class="wrap">
     <Header></Header>
     <div class="content">
-      <main>
-        <DetailList class="top" detail-link="/post/1/"></DetailList>
-      </main>
+      <DetailList></DetailList>
       <side-menu></side-menu>
     </div>
     <Footer></Footer>

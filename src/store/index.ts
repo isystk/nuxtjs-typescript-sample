@@ -1,15 +1,15 @@
 import { MutationTree, ActionTree, ActionContext } from "vuex";
 import { Context as AppContext } from "@nuxt/types";
-import { RootState, News } from "../types";
-import newsData from "../static/data/news.json";
+import { RootState, Blog } from "../types";
+import blogData from "../static/data/blog.json";
 
 export const state = (): RootState => ({
-  news: []
+  blogs: []
 })
 
 export const mutations: MutationTree<RootState> = {
-  setNews(state: RootState, news: News[]): void {
-    state.news = news
+  setBlog(state: RootState, blogs: Blog[]): void {
+    state.blogs = blogs
   }
 }
 
@@ -19,10 +19,10 @@ interface Actions<S, R> extends ActionTree<S, R> {
 
 export const actions: Actions<RootState, RootState> = {
   async nuxtServerInit({ commit }, context) {
-    let news: News[];
-    news = context.isStatic ?
-      newsData :
-      await context.app.$axios.$get("./data/news.json");
-    commit("setNews", news);
+    let blogs: Blog[];
+    blogs = context.isStatic ?
+      blogData :
+      await context.app.$axios.$get("./data/blog.json");
+    commit("setBlog", blogs);
   }
 }

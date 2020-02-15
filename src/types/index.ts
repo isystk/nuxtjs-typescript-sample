@@ -1,10 +1,13 @@
 export * from './state';
 
-export interface DetailItem {
-  text: string;
+export interface BlogText {
+  "id": number;
+  "text": string;
+  "sub-title": string;
 }
 
-export interface News {
-  title: string;
-  items: DetailItem[];
+export interface Blog {
+  "title": string;
+  "category": string;
+  "items": BlogText[];
 }

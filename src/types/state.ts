@@ -1,5 +1,5 @@
-import { News } from "../types";
+import { Blog } from "../types";
 
 export interface RootState {
-  news: News[];
+  blogs: Blog[];
 }

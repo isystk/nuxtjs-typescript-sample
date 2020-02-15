@@ -1,13 +1,15 @@
 <template>
-  <article class="detail" >
-    <nuxt-link :to="{'path': detailLink}">
-      <div class="entry-header">
-        <div class="category_link">データベース</div>
-        <h1 class="entry-title">タイトルタイトルタイトルタイトルタイトル</h1>
-      </div>
-      <div class="clearfix"></div>
-    </nuxt-link>
-  </article>
+  <main>
+    <article class="detail top" v-for="(e, index) in blogs" :key="index">
+      <nuxt-link :to="{'path': '/post/' + e.id + '/'}">
+        <div class="entry-header">
+          <div class="category_link">{{e.category}}</div>
+          <h1 class="entry-title">{{e.title}}</h1>
+        </div>
+        <div class="clearfix"></div>
+      </nuxt-link>
+    </article>
+  </main>
 </template>
 
 <script lang="ts">
@@ -15,8 +17,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
 export default class extends Vue {
-  @Prop({ type: String, required: false })
-  detailLink?: string;
+  blogs = this.$store.state.blogs;
 }
 </script>
 
