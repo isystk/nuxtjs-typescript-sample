@@ -7,7 +7,6 @@ export default {
    * ビルド時に渡される env の値は、ここに記載することで文字列に置換される
    */
   env: {
-    STATIC_PATH: process.env.NODE_ENV === 'production' ? '/nuxtjs' : '/'
   },
   router: {
     base: process.env.NODE_ENV === 'production' ? '/nuxtjs' : '/'
