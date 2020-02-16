@@ -1,9 +1,9 @@
-nuxtjs-sample
+nuxtjs-typescript-sample
 ====
 
 ## Description
 
-Nuxt.js、TypeScript、Vuetify を利用したサンプルです。
+Nuxt.js、TypeScript を利用したサンプルです。
 
 ## Demo
 

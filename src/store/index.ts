@@ -1,6 +1,7 @@
 import { MutationTree, ActionTree, ActionContext } from "vuex";
 import { Context as AppContext } from "@nuxt/types";
 import { RootState, Blog } from "../types";
+import blogData from "../static/data/blog.json";
 
 export const state = (): RootState => ({
   blogs: []
@@ -26,7 +27,8 @@ export const actions: Actions<RootState, RootState> = {
   // サーバー起動時にデータを取得する場合
   async nuxtServerInit({ commit }, context) {
     let blogs: Blog[];
-    blogs = await context.app.$axios.$get("./data/blog.json");
+    let isStatic = false;
+    blogs = isStatic ? blogData : await context.app.$axios.$get("./data/blog.json");
     commit("setBlogList", blogs);
   }
 }

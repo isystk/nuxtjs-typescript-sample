@@ -1,8 +1,12 @@
 {
   "name": "nuxtjs-sample",
-  "description": "Nuxt.js、TypeScript、Vuetify を利用したサンプルです。",
+  "description": "Nuxt.js、TypeScript を利用したサンプルです。",
   "version": "2.10.2",
   "private": true,
+  "scripts": {
+    "build": "nuxt-ts generate --mode production",
+    "dev": "nuxt-ts --mode development"
+  },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.2.2",
     "@nuxtjs/axios": "5.8.0",
@@ -18,9 +22,5 @@
   "devDependencies": {
     "@mdi/font": "^4.5.95",
     "@nuxt/typescript-build": "0.3.2"
-  },
-  "scripts": {
-    "build": "nuxt-ts generate",
-    "dev": "nuxt-ts"
   }
 }

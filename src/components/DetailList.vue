@@ -1,7 +1,7 @@
 <template>
   <main>
     <article class="detail top" v-for="(e, index) in blogs" :key="index">
-      <nuxt-link :to="{'path': '/post/' + e.id + '/'}">
+      <nuxt-link :to="{'path': STATIC_PATH + 'post/' + e.id + '/'}">
         <div class="entry-header">
           <div class="category_link">{{e.category}}</div>
           <h1 class="entry-title">{{e.title}}</h1>
@@ -18,6 +18,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 @Component
 export default class extends Vue {
   blogs = this.$store.state.blogs;
+  STATIC_PATH = process.env.STATIC_PATH
 }
 </script>
 
