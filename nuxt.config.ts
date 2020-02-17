@@ -17,7 +17,7 @@ export default {
     host: "0.0.0.0" // デフォルト: localhost
   },
   head: {
-    title: "nuxtjs-sample｜デモページ",
+    title: "nuxtjs-typescript-sample｜デモページ",
     meta: [
       { hid: "charset", charset: "utf-8" },
       { hid: "viewport", name: "viewport", content: "width=device-width, initial-scale=1" },

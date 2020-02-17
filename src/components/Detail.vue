@@ -21,7 +21,7 @@ export default class extends Vue {
   @Prop({ type: String, required: true })
   postId?: number;
 
-  post = this.$store.getters.getBlogDetail(this.postId);
+  post = this.$store.getters.getPostDetail(this.postId);
   
 }
 </script>

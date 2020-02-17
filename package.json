@@ -1,5 +1,5 @@
 {
-  "name": "nuxtjs-sample",
+  "name": "nuxtjs-typescript-sample",
   "description": "Nuxt.js、TypeScript を利用したサンプルです。",
   "version": "2.10.2",
   "private": true,

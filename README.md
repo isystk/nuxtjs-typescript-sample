@@ -6,6 +6,7 @@ nuxtjs-typescript-sample
 Nuxt.js、TypeScript を利用したサンプルです。
 
 ## Demo
+https://demo.isystk.com/nuxtjs/
 
 ## VS. 
 
@@ -25,7 +26,7 @@ $ curl http://localhost:3000/
 
 ## Licence
 
-[MIT](https://github.com/isystk/nuxtjs-sample/LICENCE)
+[MIT](https://github.com/isystk/nuxtjs-typescript-sample/LICENCE)
 
 ## Author
 
