@@ -1,0 +1,10 @@
+
+RewriteEngine On
+RewriteBase /nuxtjs/
+RewriteCond %{REQUEST_URI} !/nuxtjs/dist
+RewriteCond %{REQUEST_URI} !/nuxtjs/git-hook.php
+RewriteRule ^(.*)$ dist/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /nuxtjs [L]
+
