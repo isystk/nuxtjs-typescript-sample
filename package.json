@@ -4,7 +4,7 @@
   "version": "2.10.2",
   "private": true,
   "scripts": {
-    "build": "nuxt-ts generate --mode production",
+    "generate": "nuxt-ts generate --mode production",
     "dev": "nuxt-ts --mode development"
   },
   "dependencies": {
