@@ -1,8 +1,14 @@
 {
-  "name": "IsystkPortfolio",
-  "description": "isystk のポートフォリオです。このサイトは、Nuxt.js + TypeScript + Vuetify で作られています。",
+  "name": "Nuxtjs-TypeScript-Vuetify",
+  "description": "Nuxt.js、TypeScript、Vuetify を利用したサンプルです。",
   "version": "2.10.2",
   "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate"
+  },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.2.2",
     "@nuxtjs/axios": "5.8.0",
@@ -19,13 +25,8 @@
   "devDependencies": {
     "@mdi/font": "^4.5.95",
     "@nuxt/typescript-build": "0.3.2",
+    "loglevel": "^1.6.7",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0"
-  },
-  "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "cross-env GITHUB_PAGES=true nuxt-ts generate"
   }
 }

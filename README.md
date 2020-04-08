@@ -6,7 +6,6 @@ Nuxt.js TypeScript Vuetify サンプル
 Nuxt.js、TypeScript、Vuetify を利用したサンプルです。
 
 ## Demo
-https://demo.isystk.com/nuxtjs/
 
 ## VS. 
 
@@ -17,17 +16,6 @@ https://demo.isystk.com/nuxtjs/
 * Vuetify@2.1.6 
 
 ## Usage
-
-``` bash
-# Nginxを起動する
-$ docker-compose -f ./docker/docker-compose.yml up -d nginx
-
-# Nginxを停止する
-$ docker-compose -f ./docker/docker-compose.yml stop nginx
-
-# デプロイ用のDockerImageを作成する
-$ docker-compose -f ./docker/docker-compose.yml build --no-cache webapp
-```
 
 ## Install
 
