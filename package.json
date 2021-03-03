@@ -26,7 +26,7 @@
     "@mdi/font": "^4.5.95",
     "@nuxt/typescript-build": "0.3.2",
     "loglevel": "^1.6.7",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0"
   }
 }
